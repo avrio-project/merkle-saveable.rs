@@ -5,14 +5,16 @@ use ring::digest::Algorithm;
 
 use hashutils::{HashUtils, Hashable};
 use tree::{LeavesIntoIterator, LeavesIterator, Tree};
+use serde::{Serialize, Deserialize};
 
 use proof::{Lemma, Proof};
 
 /// A Merkle tree is a binary tree, with values of type `T` at the leafs,
 /// and where every internal node holds the hash of the concatenation of the hashes of its children nodes.
-#[derive(Clone, Debug)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct MerkleTree<T> {
     /// The hashing algorithm used by this Merkle tree
+    #[serde(skip_serializing)]
     pub algorithm: &'static Algorithm,
 
     /// The root of the inner binary tree
