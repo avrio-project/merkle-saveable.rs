@@ -4,7 +4,7 @@ version = "1.11.1-pre"
 authors = [
   "Frederic Jacobs <me@fredericjacobs.com>",
   "Dylan Bourgeois <dtsbourg@gmail.com>",
-  "Romain Ruetschi <romain.ruetschi@gmail.com>"
+  "Romain Ruetschi <romain.ruetschi@gmail.com>",
   "Leo Cornelius <leocornelius019@gmail.com>"
 ]
 
