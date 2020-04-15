@@ -4,8 +4,11 @@ use hashutils::{HashUtils, Hashable};
 
 pub use proof::{Lemma, Positioned, Proof};
 
+use serde::{Serialize, Deserialize};
+
+
 /// Binary Tree where leaves hold a stand-alone value.
-#[derive(Clone, Debug, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[derive(Clone, Debug, PartialEq, Eq, PartialOrd, Ord, Hash, Serialize, Deserialize)]
 pub enum Tree<T> {
     Empty {
         hash: Vec<u8>,
