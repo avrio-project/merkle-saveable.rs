@@ -1,13 +1,14 @@
 [package]
-name    = "merkle"
+name    = "merkle-saveable"
 version = "1.11.1-pre"
 authors = [
   "Frederic Jacobs <me@fredericjacobs.com>",
   "Dylan Bourgeois <dtsbourg@gmail.com>",
   "Romain Ruetschi <romain.ruetschi@gmail.com>"
+  "Leo Cornelius <leocornelius019@gmail.com>"
 ]
 
-description   = "Merkle tree implementation with support for generation of inclusion proofs."
+description   = "Merkle tree implementation with support for generation of inclusion proofs. Forked to add savable functionality and root updates"
 license       = "BSD-3-Clause"
 documentation = "https://spinresearch.github.io/merkle.rs/merkle/index.html"
 homepage      = "https://github.com/SpinResearch/merkle.rs"
